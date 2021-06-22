@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "@types/mongodb": "^3.6.17",
+    "mongodb": "^3.6.9",
+    "node-fetch": "^2.6.1",
+    "puppeteer": "^10.0.0"
+  },
+  "type": "module",
+  "engines": {
+    "node": "16.x"
+  },
+  "name": "leetcodeContest244Data",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "main": "index.js",
+  "license": "MIT"
+}

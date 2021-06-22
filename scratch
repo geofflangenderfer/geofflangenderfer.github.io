@@ -1,0 +1,14 @@
+let attended = document.querySelector("#lc-content > div > div.css-fp8x3i-UserContentWrap.e14xszuq0 > div.css-89mw8n-Container.e1rqo30r0 > div > div.css-1pfbig9-ScrollContainer.ehnuzg93 > div:nth-child(1) > div.css-sp69l8-RankingFooter.e17httpm4 > div:nth-child(3) > b > font > font").innerText
+let easy = document.querySelector("#lc-content > div > div.css-fp8x3i-UserContentWrap.e14xszuq0 > div.css-89mw8n-Container.e1rqo30r0 > div > div.css-1pfbig9-ScrollContainer.ehnuzg93 > div:nth-child(2) > div.e8x9g0p1.css-1y8uon5-Container-StyledProgressStats.e16dmc0p0 > div:nth-child(1) > div.css-1tqyoik-NumContainer.e16dmc0p3 > span.css-xdhepq-AcceptedNum.e16dmc0p4 > font > font").innerText
+let medium = document.querySelector("#lc-content > div > div.css-fp8x3i-UserContentWrap.e14xszuq0 > div.css-89mw8n-Container.e1rqo30r0 > div > div.css-1pfbig9-ScrollContainer.ehnuzg93 > div:nth-child(2) > div.e8x9g0p1.css-1y8uon5-Container-StyledProgressStats.e16dmc0p0 > div:nth-child(2) > div.css-1tqyoik-NumContainer.e16dmc0p3 > span.css-xdhepq-AcceptedNum.e16dmc0p4 > font > font").innerText
+let hard = document.querySelector("#lc-content > div > div.css-fp8x3i-UserContentWrap.e14xszuq0 > div.css-89mw8n-Container.e1rqo30r0 > div > div.css-1pfbig9-ScrollContainer.ehnuzg93 > div:nth-child(2) > div.e8x9g0p1.css-1y8uon5-Container-StyledProgressStats.e16dmc0p0 > div:nth-child(3) > div.css-1tqyoik-NumContainer.e16dmc0p3 > span.css-xdhepq-AcceptedNum.e16dmc0p4 > font > font").innerText
+let yearlySubmissions = document.querySelector("#lc-content > div > div.css-fp8x3i-UserContentWrap.e14xszuq0 > div.css-17mygkr-Container.e4eqjjf0 > div.css-ll9xdg-Header.e4eqjjf1 > div.css-o5i0nj-Summary.e4eqjjf2 > span > font > font").innerText
+let acceptancePercentage = document.querySelector("#lc-content > div > div.css-fp8x3i-UserContentWrap.e14xszuq0 > div.css-89mw8n-Container.e1rqo30r0 > div > div.css-1pfbig9-ScrollContainer.ehnuzg93 > div:nth-child(2) > div.e8x9g0p0.css-1vpzx3y-Container-StyledProgressCircle.eicpx4i0 > div > div.css-nagb2r-SubmitPercentage.eicpx4i7 > span.css-y2hxgr-Integer.eicpx4i9 > font > font").innerText
+data = {
+    "attended": attended,
+    "easy": easy,
+    "medium": medium,
+    "hard": hard,
+    "yearlySubmissions": yearlySubmissions,
+    "acceptancePercentage": acceptancePercentage.split(" ")[0]
+};

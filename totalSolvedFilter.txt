@@ -1,0 +1,7 @@
+{
+    "0": map(select(.score == 0)) | map((.easy | tonumber) + (.medium | tonumber) + (.hard | tonumber)) | sort,
+    "1": map(select(0 < .score and .score<=6)) | map((.easy | tonumber) + (.medium | tonumber) + (.hard | tonumber)) | sort,
+    "2": map(select(6 < .score and .score<=11)) | map((.easy | tonumber) + (.medium | tonumber) + (.hard | tonumber)) | sort,
+    "3": map(select(11 < .score and .score<=17)) | map((.easy | tonumber) + (.medium | tonumber) + (.hard | tonumber)) | sort,
+    "4": map(select(.score == 18)) | map((.easy | tonumber) + (.medium | tonumber) + (.hard | tonumber)) | sort,
+}
